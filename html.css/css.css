@@ -10,7 +10,34 @@
 
 /* GENERAL */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@100;400;700&display=swap');
+/*font-family: 'Indie Flower', cursive;
+font-family: 'Roboto', sans-serif;*/
+
+
+:root {
+    --primaryColor1: #919BA7;
+    --primaryColor2: #D11421;
+    --primaryColor3: #3B46EB;
+    
+    --main-color1: #17375E; /* */
+    --main-color2: #F6A2A8; /* */
+    --main-color3: #ACB0F7;
+    --main-color4: #D11485;
+    --main-color5: #F3E9F1;/*logo&header bg*/
+    --main-color6: #E3E0FC;/*footer bg*/
+    --main-color7: #C5C6FE;/*main bg*/
+
+    --mainWhite: #fff;
+    --mainBlack: #000;
+    --mainGrey: #808080;
+    --mainPink : pink;
+    
+    
+    --main-padding: 25px 10px;
+    --main-spacing: 0.5rem;
+    --main-transition: all 0.3sec linear;
+}
 
 *{
 	margin: 0;
@@ -19,38 +46,61 @@
 }
 
 .d-flex{display: flex;}
+.centerTxt{text-align: center;}
 
 h1{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
-    line-height: 0.8em;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow : 0 0 20px var(--main-color4) ; 
 }
 
 h2{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    line-height: 0.8em;
+    line-height: 1.6rem;
+    padding: 25px 0 15px 0;
 }
 
 h3{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    line-height: 0.8em;
+    line-height: 1.5rem;
 }
 
 h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+}
+
+
+p{
     font-size: 1.1rem;
     font-weight: 400;
-    line-height: 0.8em;
+    line-height: 1.3rem;
 }
 	
-a{text-decoration: none;}
+a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    /* padding: 20px; */
+}
+
+.fas{
+    padding: 0 10px;
+}
 
 li{list-style: none;}
 
 
+
 	
-/* <!---------------------------- BODY ----------------------------> */
+/* <!--____________________________BODY_______________________--> */
 
 body{
     background-color:white ;
@@ -61,13 +111,13 @@ body{
 	border: solid 1px red;
 }
 
-/*<!------------------------------HEADER----------------> */
+/*<!-- ............... HEADER ............... --> */
 
 /*<!--  logo (...)-->*/
 
 /*<!--  headernav (...)-->*/
 
-/*<!------------------------------MAIN----------------> */
+/*<!-- ................... MAIN ................... --> */
 
 /*<!--  banner (...)-->*/
 
@@ -78,28 +128,48 @@ body{
 /*<!--  aside  (...)-->*/
 
 
-/*<!------------------------------ FOOTER -------------------------------->*/
+/*<!-- ............... FOOTER ............... -->*/
 
 
 
 
 
+/*_____________________________________________________________________________________________________*/
 /*________________________________responsive _______ @media___________________________________________*/
+/*___________________________________________________________________________________________________*/
 
 
-
-@media all and (max-width: 1200px) and (min-width:600px)
-{
-    /*general*/
+@media all and (max-width: 320px){/* <320w */
+     /*general*/
 	/*header*/
 	/*main*/
 	/*footer*/
 }
 
-@media all and (max-width: 600px)
+
+@media all and (max-width: 600px)/* <600w */
 {	/*general*/
 	/*header*/
 	/*main*/
 	/*footer*/
 
 }
+
+@media all and (min-width: 900px){/* >900w*/
+{	/*general*/
+	/*header*/
+	/*main*/
+	/*footer*/
+}
+
+@media all and (min-width: 120px){/* >1200w*/
+{	/*general*/
+	/*header*/
+	/*main*/
+	/*footer*/
+}
+
+/* ou de 600w à 1200w
+@media all and (max-width: 1200px) and (min-width:600px){}
+*/
+
